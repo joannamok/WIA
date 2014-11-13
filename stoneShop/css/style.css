@@ -1,0 +1,202 @@
+
+#cta{
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size:2.7em;
+	color: #EA6045;
+}
+/*main nav*/
+#mainNav{
+	margin-bottom: 30px;
+}
+/*page title*/
+#slideShow h2{
+	margin:35px 0 30px 0;
+}
+/*all a links*/
+a{
+	cursor: pointer;
+}
+/*primary buttons*/
+.btn-primary{
+	background: #EA6045;
+}
+/*primary buttons hover*/
+.thumbnail .btn .btn-primary:hover{
+	background: #F8CA4D;
+}
+/*main article thumbnail box*/
+#mainBox{
+	padding: 15px;
+	margin-top: 30px;
+}
+/*main article p*/
+#mainBox p{
+	padding: 10px;
+}
+/**/
+#main_section{
+	margin-top: 20px;
+}
+/*main article titles*/
+ article h3{
+	background: #3F5666;
+	color:white;
+	padding: 10px;
+}
+
+/*main article button*/
+#mainBtn{
+	width:60%;
+	margin-top: 30px;
+	background: #EA6045;
+	border: none;
+	margin-left: 20%
+}
+/*stone shop buttons*/
+#gallery{
+	margin-top: 90px;
+}
+/*title section for stones and beads*/
+.secTitle{
+	background: #3F5666;
+	padding: 3px;
+	font-size: 1.5em;
+	font-family: 'Roboto Condensed', sans-serif;
+	color: white;
+}
+/***section labels**/
+/*gemstones*/
+.gems{
+	background: #3F5666; 
+}
+/*cabs*/
+.cabs{
+	background: #EA6045; 
+}
+/*cabs*/
+.beads{
+	background: #F8CA4D; 
+}
+
+/********************************************Stone Pages*********************************************/
+
+/*pagination*/
+nav .pagination{
+	margin-top:90px;
+	float: right;
+}
+/*section with rows for gallery*/
+.shopRow{
+	clear: both;
+}
+/*article in shop section*/
+#shopArticle{
+	margin-top: 60px;
+}
+/*article in shop section p*/
+#shopArticle p{
+	font-size: 1.2em;
+}
+/*********************CABS********************/
+/*page title on Cab Page*/
+.cabColor{
+	background: #EA6045;
+}
+/*gallery of shops on cab page*/
+.cabSection .secTitle{
+	background:#EA6045;
+}
+/*********************BEADS********************/
+/*page title on Cab Page*/
+.beadColor{
+	background: #F8CA4D;
+	color: #333;
+}
+/*page title on Cab Page*/
+#beadSug a{
+	background: #F8CA4D;
+	color: #333;
+}
+/*gallery of shops on cab page*/
+.beadSection .secTitle{
+	background:#F8CA4D;
+	color: #333;
+}
+/*********************BEADS********************/
+/*page title on Cab Page*/
+.gemColor{
+	background: #3F5666;
+}
+/*page title on Cab Page*/
+#gemSug a{
+	background: #3F5666;
+}
+/*gallery of shops on cab page*/
+.gemSection .secTitle{
+	background:#3F5666;
+}
+
+
+/***********************************POST A SUGGESTION PAGE*****************************************/
+/*main section box*/
+#sugMain p,#sugMain a{
+	margin: 60px 0 30px 0;
+}
+/*Headers on page*/
+.sugColor{
+	color: #3F5666;
+}
+/*suggestion modal button*/
+#postSugBtn{
+	background:#EA6045;
+	border: none;
+}
+/*post box*/
+#postedSug{
+	border: 1px solid #3F5666;
+	padding: 20px;
+	margin: 30px 0 30px 0;
+}
+/*suggested box titles*/
+#postedSug h5{
+	color: #3F5666;
+}
+/*main image on sug page*/
+.mainSugImg{
+	border: 1px solid #EA6045;
+}
+/*section for posted boxes*/
+.sugBoxes{
+	margin-top: 60px;
+}
+
+
+
+/* #Media Queries
+================================================== */
+
+	/* Smaller than standard 960 (devices and browsers) */
+	@media only screen and (max-width: 959px) {
+		
+	}
+
+	/* Tablet Portrait size to standard 960 (devices and browsers) */
+	@media only screen and (min-width: 768px) and (max-width: 959px) {
+		
+	}
+
+	/* All Mobile Sizes (devices and browser) */
+	@media only screen and (max-width: 767px) {
+		
+	}
+
+	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+	@media only screen and (min-width: 480px) and (max-width: 767px) {
+		
+	}
+
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: 479px) {
+		
+	}
+
