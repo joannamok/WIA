@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Jeweler's Chat</title>
+    <title>Suggested Stone Shops</title>
     <!--google font roboto condensed-->
     <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/style.css">
@@ -36,10 +36,10 @@
             <ul class="nav navbar-nav">
               <li><a href="index.html">Home</a></li>
               <li class="dropdown">
-                <a href="#" class="dropdown-toggle active" data-toggle="dropdown">Jeweler's Chat<span class="caret"></span></a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Jeweler's Chat<span class="caret"></span></a>
                 <ul class="dropdown-menu" role="menu">
-                  <li><a href="suggest.html">Community Suggestions</a></li>
-                  <li><a href="artistPost.html" class="active">Jeweler Chat</a></li>
+                  <li><a href="suggest.html" class="active">Community Suggestions</a></li>
+                  <li class="active"><a href="artistPost.html">Jeweler Chat</a></li>
                   <li><a href="#">Stone Blog</a></li>
                 </ul>
               </li>
@@ -65,21 +65,24 @@
       </nav>
     </header>
 
+  
+
     <!--Main Section with post a suggestion button-->
-    <main class="row">
+    <main class="row" id="sugMain">
       <section class="col-md-6">
-        <h2 class="sugColor">Let’s See Your Latest and Greatest Designs! Post your new stone jewelry here and show your stuff the Stone Hub Community. Scroll down to see what other Stone Hubers have been up too. Spread the Inspiration! </p>
+        <h2 class="sugColor">Post You Favorite Stone Shop, We Want to Know!</h2>
+        <p>Let’s See Your Latest and Greatest Designs! Post your new stone jewelry here and show your stuff the Stone Hub Community. Scroll down to see what other Stone Hubers have been up too. Spread the Inspiration! </p>
         <!--Post a supplier-->
         <a id="postSugBtn" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#sugModal">Suggest a Shop</a>
       </section>
       <section class="col-md-1"></section>
       <section class="col-md-5">
-        <img src="img/model.jpg" alt="models with smokey quartz jewelry" class="thumbnail">
+        <img src="img/model.jpg" alt="model wearing jewelry" class="img-circle mainSugImg" width="400">
       </section>
     </main><!--end section of page-->
 
   <!--Posted Suppliers Section-->
-  <section>
+  <section class="sugBoxes">
     <h3 class="sugColor">Suggestions Straight from the Stone Hub Community</h3>
      <!--Posted Suppliers Section-->
     <article id="postedSug">
@@ -91,6 +94,12 @@
       <p>shelly98</p>
     </article>
   </section>
+
+
+
+
+
+
 
   <!--MODALS-->
   <!--Suggest a Shop section Modal-->
