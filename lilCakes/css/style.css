@@ -225,7 +225,33 @@ footer .nav-pills li a{
 	padding-top: 100px;
 }
 
+/*****************************SPECIAL.HTML**********************************************************/
+/*main section*/
+#mainSpec{
+	margin-top: 60px;
+}
+/*main title,p and button*/
+.mainS{
+	margin-bottom: 40px;
+}
+/*main title,p and button*/
+p.mainS{
+	font-size: 1.2em;
+}
+.customBtn{
+	width: 100%;
+	font-size: 1.2em;
+	padding: 20px;
+}
 
+/**********************************EVERYDAY.HTML******************************************************************/
+/*main p,title and button*/
+.mainE{
+	margin-bottom: 50px;
+}
+p.mainE{
+	font-size: 1.2em;
+}
 
 
 

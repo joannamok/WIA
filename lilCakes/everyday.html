@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About</title>
+    <link href='http://fonts.googleapis.com/css?family=Gloria+Hallelujah' rel='stylesheet' type='text/css'>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]-->
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+
+  </head>
+  <body>
+  <section class="container">
+
+    <header class="row">
+      <!-- source images used in this example -->
+      <img id="img1" src="img/icon1.png" style="display:none;">
+      <img id="img2" src="img/icon2.png" style="display:none;">
+      <img id="img3" src="img/icon3.png" style="display:none;">
+      <img id="img4" src="img/icon4.png" style="display:none;">
+      <!--NavBar-->
+        <nav class="navbar navbar-default" role="navigation" id="mainNav">
+          <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="index.html"><img src="img/logo.png" height="30"alt="the Stone Hub"></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Order Lil' Cakes<span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li class="active" ><a href="everyday.html">EveryDay Lil' Cakes</a></li>
+                    <li><a href="special.html">Custom Lil' Cakes</a></li>
+                  </ul>
+                </li>
+              </ul>
+                </li>
+              </ul>
+
+               <!--Login/SignUp-->
+                <ul class="nav navbar-nav navbar-right">
+                  <li><a type="button"  data-toggle="modal" data-target="#login">Login</a></li>
+                  <li><a type="button"  data-toggle="modal" data-target="#signUp">SignUp</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+        </nav>
+    </header>
+    <!--main section-->
+    <section class="row" id="mainSpec">
+      <article class="row">
+        <div class="col-sm-6">
+          <h2 class="mainE">Custom Lil' Cakes for Every Event</h2>
+          <p class="mainE">Checkout our Daily Assortment of Custom Cakes. We always have a delicious variety of flavors and designs ready to be enjoyed. If you would like to order a dozen or more of our daily special, simply fill out the form below and we will have them ready for you when you get here.</p>
+          <p class="mainE">Our tasty cakes fly off the bakers shelves so if you have a certain one of our yummy flavors you are craving; ordering in advance will help us be sure we have your full order before you get here.</p>
+          <a class="btn btn-primary customBtn mainE" type="button"  data-toggle="modal" data-target="#order">Order Now</a>
+          <img src="img/icon4.png" alt="cupcakes" height="150">
+        </div>
+        <div class="col-sm-1"></div>
+        <!--video-->
+        <div class="col-sm-5">
+           <img class="img-responsive"src="img/storeCakes.jpg" alt="custom cupcakes">
+        </div>
+      </article>
+    </section>
+
+
+
+
+      <!--footer-->
+      <footer id="aboutFooter">
+      <!--cupcake canvas-->
+      <canvas id="Canvas2" width="300" height="100"><img src="img/icon1" width="200px"alt=""></canvas>
+        <ul class="nav nav-pills">
+          <li role="presentation" class="active"><a href="#">Home</a></li>
+          <li role="presentation"><a href="#">About</a></li>
+          <li role="presentation"><a href="#">Order</a></li>
+        </ul>
+      </footer>
+
+   <section class="modal fade" id="order" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+          <h4 class="modal-title" id="myModalLabel">My Lil Cakes Order:</h4>
+        </div>
+        <div class="modal-body">
+            <!--name-->
+            <label for="name">Name: </label><br>
+            <input type="text"><br>
+            <!--number-->
+            <label for="amount">Amount of Lil' Cakes By Dozen Needed: </label><br>
+            <input type="text"><br>
+            <!--date-->
+            <label for="date">PickUp Date: </label><br>
+            <input type="text"><br>
+            <!--date-->
+            <label for="item">Daily Menu Item: </label><br>
+            <input type="text"><br>
+            <!--call-->
+            <label for="phone">Phone: </label><br>
+            <input type="text"><br>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">SignUp</button>
+        </div>
+      </div>
+    </div>
+  </section> 
+
+      <!--Login Modal Window-->
+
+  <section class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+          <h4 class="modal-title" id="myModalLabel">Login: </h4>
+        </div>
+        <div class="modal-body">
+          <!--username-->
+            <label for="username">UserName: </label><br>
+            <input type="text"><br>
+            <!--password-->
+            <label for="password">Password: </label><br>
+            <input type="password"><br>
+            <!--Login Button-->
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Login</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--SignUp Modal Window-->
+
+  <section class="modal fade" id="signUp" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+          <h4 class="modal-title" id="myModalLabel">SignUp: </h4>
+        </div>
+        <div class="modal-body">
+            <!--email-->
+            <label for="email">Email: </label><br>
+            <input type="text"><br>
+            <!--email-->
+            <label for="username">Username: </label><br>
+            <input type="text"><br>
+            <!--password-->
+            <label for="password">Password: </label><br>
+            <input type="password"><br>
+            <!--password-->
+            <label for="password">Retype Password: </label><br>
+            <input type="password"><br>
+            <!--Login Button-->
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">SignUp</button>
+        </div>
+      </div>
+    </div>
+  </section> 
+
+
+ </section><!--end page container section-->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/modernizr.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/map.js"></script>
+  </body>
+</html>
