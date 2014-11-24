@@ -66,10 +66,12 @@
         </nav>
     </header>
     <!--main section-->
-    <section class="row" id="mainHome">
+    <section class="row" id="mainAbout">
       <article class="row">
         <div class="col-sm-6">
           <h2>About our Lil' Cakes</h2>
+          <p>Visit one of our local locations today to taste and enjoy the best cupcakes in North Alabama. We have an assortment of daily treats that will keep you coming back for more. Our kid friendly locations are located through out the Huntsville metro area for your convenience. </p>
+          <p>Let us cater your next event with our beautiful and tasty Lil’ Cakes. Your guests will love our artistic cupcakes and delicious recipes. We have a book of designs and custom orders are always welcome.</p>
         </div>
         <div class="col-sm-1"></div>
         <div class="col-sm-5">
@@ -78,11 +80,101 @@
       </article>
     </section>
 
-    <!--MAP section-->
-    <h3>Visit Us at our Nearest Huntsville Metro Area Location</h3> 
+    <!--map section-->
+  <section id="mapBox" class="row">
+
+  <!--box for details section-->
+  <section class="detail_container">
+    <!--city details-->
+    <section class="col-md-6 city_detail">
+      <h2>Stop By and Visit Us at Any of Lil’ Cake Locations</h2>
+      <p>Click the locations on the Map to find you’re a local bakery near you. We have locations in Huntsville, Madison, Athens and Decatur.</p> 
+    </section>
+    <!--contianer for map section, has class for js-->
+    <section class=" col-6-md map_container">
+    <!--links js to where in map to place png dot-->
+      <a class="dot" style="top:60px;  left:190px;" location="SH" city="south"></a>
+      <a class="dot" style="top:30px;  left:200px;" location="NH" city="north"></a>
+      <a class="dot" style="top:59px; left:152px;" location="MA" city="madison" ></a>
+      <a class="dot" style="top:41px; left:135px;" location="AT" city="athens"></a>
+      <a class="dot" style="top:72px; left:123px;" location="DE" city="decatur"></a>
+      <!--this is the dropdown box to show continet options-->
+      <form id="mapForm" name="mapForm" class="form_continent" method="post" action="">
+        <select class="btn btn-primary" name="continent" id="location">
+          <option value="SH">South Huntsville</option>
+          <option value="NH">North Huntsville</option>
+          <option value="MA">Madison</option>
+          <option value="AT">Athens</option>
+          <option value="DE">Decatur</option>
+          <option value="ALL" selected="selected">Show all Locations</option>
+        </select>
+      </form>
+    </section><!--end map section-->
+
+    
+  </section><!--end Box for map row-->
+
+    <!--Section with deatls html-->
+    <section class="city_detail_container">
+      <!-- City -->
+      <div class="city_detail" id="south">
+        <img class="city_photo" src="img/logo.png" alt="Lil Cakes" width="200px" />
+        <div class="city_info">
+          <h3>Southeast Huntsville</h3>
+          <p>123 Main Street</p>
+          <p>Huntsville, AL 35801</p>
+          <p>Phone: 256-555-9867</p>
+        </div>
+      </div>
+      
+      <!-- City -->
+      <div class="city_detail" id="north">
+        <img class="city_photo" src="img/logo.png" alt="Lil Cakes" width="200px" />
+        <div class="city_info">
+          <h3>North Huntsville</h3>
+          <p>123 Main Street</p>
+          <p>Huntsville, AL 35807</p>
+          <p>Phone: 256-555-9867</p>
+        </div>
+      </div>
+      
+      <!-- City -->
+      <div class="city_detail" id="madison">
+        <img class="city_photo" src="img/logo.png" alt="Lil Cakes" width="200px" />
+        <div class="city_info">
+          <h3>Madison</h3>
+          <p>123 Main Street</p>
+          <p>Madison, AL 35859</p>
+          <p>Phone: 256-555-9867</p>
+        </div>
+      </div>
+      
+      <!-- City -->
+      <div class="city_detail" id="athens">
+       <img class="city_photo" src="img/logo.png" alt="Lil Cakes" width="200px" />
+        <div class="city_info">
+          <h3>Athens</h3>
+          <p>123 Main Street</p>
+          <p>Athens, AL 35802</p>
+          <p>Phone: 256-555-9867</p>
+        </div>
+      </div>
+      
+      <!-- City -->
+      <div class="city_detail" id="decatur">
+        <img class="city_photo" src="img/logo.png" alt="Lil Cakes" width="200px" />
+        <div class="city_info">
+          <h3>Decatur</h3>
+          <p>123 Main Street</p>
+          <p>Decatur, AL 35806</p>
+          <p>Phone: 256-555-9867</p>
+        </div>
+      </div>
+  </section><!--end detail info section-->
+
 
       <!--footer-->
-      <footer>
+      <footer id="aboutFooter">
       <!--cupcake canvas-->
       <canvas id="Canvas2" width="300" height="100"></canvas>
         <ul class="nav nav-pills">
@@ -155,8 +247,10 @@
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/jquery-1.11.1.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/map.js"></script>
   </body>
 </html>

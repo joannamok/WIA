@@ -158,14 +158,72 @@ footer .nav-pills li a{
 
 
 /***************************************ABOUT.HTML****************************/
+/*main section*/
+#mainAbout{
+	margin-top: 60px;
+}
+/*main section title*/
+#mainAbout h2{
+	margin-bottom: 30px;
+}
+/*main section p*/
+#mainAbout p{
+	font-size: 1.2em;
+}
 /*main Image*/
 #aboutImg{
 	width: 100%
 }
+/****MAP***/
+#mapBox{
+	margin-top: 100px;
+}
+/*section with map*/
+.map_container{
+	background: url(../img/map.jpg) no-repeat 0px 0px;
+	height: 300px;
+	width:300px;/*exact width and height of actual map.jpg*/
+	position: relative;
+	color: #fff;
+	font-family: sans-serif;
+	font-size: 12px;
+	float: right;
+	margin: 0px 0px 0px 20px;
+	border: 1px solid #7D8A2E;
+}
+/*this is the dot png*/
+.map_container a.dot{
+	background: url(../img/dots.png) no-repeat 0px 0px;
+	height: 20px;
+	width:20px;
+	display: block;
+	cursor: pointer;
+	position: absolute;
 
-
-
-
+}
+/*hover over dots*/
+.map_container a.dot:hover{
+	background-position: 0px -20px;
+}
+/*selected section on dot png*/
+.map_container a.dot.selected{
+	background-position: 0px -40px;
+}
+/*this will position the form bar within the map image*/
+.map_container .form_continent{
+	position: absolute;
+	bottom:0;
+	left:0;
+}
+/*hides html for descriptions until needed*/
+.city_detail_container{
+	display: none;
+}
+/*footer for about page*/
+#aboutFooter{
+	border: none;
+	padding-top: 100px;
+}
 
 
 
